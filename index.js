@@ -1,57 +1,4 @@
-document.getElementById('btnEdit').addEventListener('click', function () {
-  const nameValue = document.getElementById('name-active').textContent;
-  const descriptionValue =
-    document.getElementById('discription-active').textContent;
-
-  document.querySelector('input[name="user"]').value = nameValue;
-  document.querySelector('input[name="user__description"]').value =
-    descriptionValue;
-
-  document.getElementById('my-modal').classList.add('open');
-});
-
-const saveBtn = document.querySelector('.save__btn');
-const closeModalBtn = document.getElementById('close-my-modal-btn');
-
-saveBtn.addEventListener('click', () => {
-  saveData();
-});
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter') {
-    saveData();
-  }
-});
-
-closeModalBtn.addEventListener('click', () => {
-  document.getElementById('my-modal').classList.remove('open');
-});
-
-function saveData() {
-  const nameInput = document.querySelector('input[name="user"]');
-  const descriptionInput = document.querySelector(
-    'input[name="user__description"]'
-  );
-  const profileName = document.querySelector('.profile__name');
-  const profileDescription = document.querySelector('.discription');
-
-  profileName.textContent = nameInput.value;
-  profileDescription.textContent = descriptionInput.value;
-
-  document.getElementById('my-modal').classList.remove('open');
-}
-
-const addBtn = document.getElementById('addBtn');
-const closeModalBtnAdd = document.getElementById('close-my-modal-btn_add');
-
-addBtn.addEventListener('click', function () {
-  document.getElementById('my-modal_add').classList.add('open');
-});
-
-closeModalBtnAdd.addEventListener('click', function () {
-  document.getElementById('my-modal_add').classList.remove('open');
-});
-
+// Массив с карточками
 const initialCards = [
   {
     name: 'Архыз',
@@ -81,6 +28,7 @@ const initialCards = [
 
 const parentElement = document.querySelector('.elements__grid');
 
+//Функция добавление карточки
 function createCardElement(card) {
   const cardElement = document.createElement('div');
   cardElement.classList.add('grid__element');
@@ -131,16 +79,88 @@ function createCardElement(card) {
   return cardElement;
 }
 
+//Open Edit modal
+document.getElementById('btnEdit').addEventListener('click', function () {
+  const nameValue = document.getElementById('name-active').textContent;
+  const descriptionValue =
+    document.getElementById('discription-active').textContent;
+
+  document.querySelector('input[name="user"]').value = nameValue;
+  document.querySelector('input[name="user__description"]').value =
+    descriptionValue;
+
+  document.getElementById('my-modal').classList.add('open');
+});
+
+document.querySelector('.overlay').addEventListener('click', function () {
+  document.getElementById('my-modal_add').classList.remove('open');
+});
+
+document.querySelector('.overlayEdit').addEventListener('click', function () {
+  document.getElementById('my-modal').classList.remove('open');
+});
+
+const overlayModal = document.querySelector('.overlay');
+const saveBtn = document.querySelector('.save__btn');
+const closeModalBtn = document.getElementById('close-my-modal-btn');
+
+saveBtn.addEventListener('click', () => {
+  saveData();
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    saveData();
+  }
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    document.getElementById('my-modal_add').classList.remove('open');
+    document.getElementById('my-modal').classList.remove('open');
+  }
+});
+
+closeModalBtn.addEventListener('click', () => {
+  event.preventDefault();
+  document.getElementById('my-modal').classList.remove('open');
+});
+
+function saveData() {
+  const nameInput = document.querySelector('input[name="user"]');
+  const descriptionInput = document.querySelector(
+    'input[name="user__description"]'
+  );
+  const profileName = document.querySelector('.profile__name');
+  const profileDescription = document.querySelector('.discription');
+
+  if (nameInput.validity.valid && descriptionInput.validity.valid) {
+    profileName.textContent = nameInput.value;
+    profileDescription.textContent = descriptionInput.value;
+
+    document.getElementById('my-modal').classList.remove('open');
+  }
+  event.preventDefault();
+}
+
+const addBtn = document.getElementById('addBtn');
+const closeModalBtnAdd = document.getElementById('close-my-modal-btn_add');
+
+addBtn.addEventListener('click', function () {
+  document.getElementById('my-modal_add').classList.add('open');
+});
+
+closeModalBtnAdd.addEventListener('click', function () {
+  document.getElementById('my-modal_add').classList.remove('open');
+});
+
 const createButton = document.querySelector('.save__btn_add');
 
+//addclick
 createButton.addEventListener('click', function () {
-  const nameInput = document.querySelector(
-    '.input__text_add input[name="name"]'
-  );
-  const linkInput = document.querySelector(
-    '.input__text_link input[name="img_link"]'
-  );
-
+  const nameInput = document.querySelector('input[name="nameImg"]');
+  const linkInput = document.querySelector('input[name="img_link"]');
+  event.preventDefault();
   const nameValue = nameInput.value;
   const linkValue = linkInput.value;
 
@@ -202,7 +222,3 @@ closeBtn.addEventListener('click', closeModal);
 const trashIcon = document.createElement('div');
 trashIcon.classList.add('trash-icon');
 trashIcon.style.backgroundImage = "url('/images/Trash.svg')";
-
-descriptionElement.appendChild(trashIcon);
-descriptionElement.appendChild(titleElement);
-descriptionElement.appendChild(likeButton);

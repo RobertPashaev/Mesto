@@ -64,6 +64,9 @@
 .modal__field {
   width: 358px;
   height: 27px;
+  margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__field__container {
@@ -152,4 +155,27 @@
 
 .open {
   visibility: visible;
+}
+
+.modal__line:invalid {
+  border: 0.7px solid rgba(255, 0, 0, 1);
+  opacity: inherit;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlayEdit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }

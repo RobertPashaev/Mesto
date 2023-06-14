@@ -14,45 +14,71 @@
         <img alt="MestoLogo" src="images/logo.svg" class="header__logo" />
         <img alt="line" src="images/Line.svg" class="header__line" />
       </header>
-      <div class="modal" id="my-modal">
-        <div class="modal__box">
-            <button id="close-my-modal-btn" class="icon_close"></button>
-            <div class="modal__container">
-                <h2 class="modal__name">Редактировать Профиль</h2>
-                <div class="modal__field__container">
+      <form name="add">
+        <div class="modal modal__edit" id="my-modal">
+          <div class="overlayEdit"></div>
+          <div class="modal__box">
+              <button id="close-my-modal-btn" class="icon_close"></button>
+                <div class="modal__container">
+                  <h2 class="modal__name">Редактировать Профиль</h2>
+                  <div class="modal__field__container">
                     <div class="modal__field">
-                        <p class="input__text"><input type="text" name="user"></p>
+                        <input id='userIn' 
+                        type="text" 
+                        name="user" 
+                        minlength="2" 
+                        maxlength="40" 
+                        class="form__input"  
+                        placeholder="Имя" 
+                        required
+                        class="userInput">
+                        <img src="images/Line 2.jpg" 
+                        alt="line" 
+                        class="modal__line"
+                        pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus>
+                        <span 
+                        class="form__input-error" 
+                        id="input-user-error"></span>
+                       </div>
+                        <div class="modal__field">
+                        <input pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus class="discriptionInput" id="discriptionIn" type="text" name="user__description" minlength="2" maxlength="200" class="form__input" required placeholder="Описание">
                         <img src="images/Line 2.jpg" alt="line" class="modal__line">
-                     </div>
-                     <div class="modal__field">
-                         <p class="input__text"><input type="text" name="user__description"></p>
-                         <img src="images/Line 2.jpg" alt="line" class="modal__line">
-                      </div>
+                        <span class="form__input-error_des" id="input-des-error"></span>
+                       </div>
+                       </div>
+                        <button  class="save__btn save__btn_disabled" type="submit" >Сохранить</button>
+                </div>        
+          </div>
+        </div> 
+      </form>
+      <form name="addImg">
+        <div class="modal modal_add" id="my-modal_add">
+          <div class="overlay"></div>
+          <div class="modal__box">
+            <button id="close-my-modal-btn_add" class="icon_close icon_close_img"></button>
+            <div class="modal__container">
+              <h2 class="modal__name">Новое место</h2>
+              <div class="modal__field__container">
+                <div class="modal__field">
+                   <input class="input__text input__text_add" type="text" name="nameImg" placeholder="Название" minlength="2" maxlength="30" required>
+                  <img src="images/Line 2.jpg" alt="line" class="modal__line">
+                  <span 
+                        class="form__input-error-name" 
+                        id="input-user-error-img"></span>
                 </div>
-                 <button class="save__btn">Сохранить</button>
-            </div>
-        </div>
-      </div>
-      <div class="modal modal_add" id="my-modal_add">
-        <div class="modal__box">
-          <button id="close-my-modal-btn_add" class="icon_close icon_close_img"></button>
-          <div class="modal__container">
-            <h2 class="modal__name">Новое место</h2>
-            <div class="modal__field__container">
-              <div class="modal__field">
-                <p class="input__text input__text_add"><input type="text" name="name" placeholder="Название"></p>
-                <img src="images/Line 2.jpg" alt="line" class="modal__line">
+                <div class="modal__field">
+                  <input class="input__text input__text_link" type="url" name="img_link" placeholder="Ссылка на картинку" required>
+                  <img src="images/Line 2.jpg" alt="line" class="modal__line">
+                  <span 
+                  class="form__input-error-link" 
+                  id="input-user-error-link"></span>
+                </div>
               </div>
-              <div class="modal__field">
-                <p class="input__text input__text_link"><input type="text" name="img_link" placeholder="Ссылка на картинку"></p>
-                <img src="images/Line 2.jpg" alt="line" class="modal__line">
-              </div>
+              <button class="save__btn_add save__btn_disabled" type="submit" required>Создать</button>
             </div>
-            <button class="save__btn save__btn_add">Создать</button>
           </div>
         </div>
-      </div>
-      
+      </form>
       <div id="modal-container">
         <div class="modal_img" id="overlay"></div>
         <div id="modal">
@@ -76,7 +102,6 @@
                 <p class="discription" id="discription-active">Исследователь океана</p>
             </div>
             <div class="profile__btn">
-                
                 <button class="profile__btn_add" id="addBtn"></button>
             </div>
         </div>
@@ -91,7 +116,6 @@
       </section>
     </div>
     <script defer src="index.js"></script>
+    <script defer src="validate.js"></script>
   </body>
 </html>
-
-
