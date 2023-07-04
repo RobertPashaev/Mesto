@@ -1,4 +1,4 @@
-.save__btn {
+.save__btn:valid {
   width: 358px;
   height: 50px;
   background: #000000;
@@ -13,6 +13,8 @@
   border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s ease, 0.3s ease;
 }
 
 @media screen and (max-width: 400px) {
@@ -25,4 +27,65 @@
     text-align: center;
     width: 238px;
   }
+}
+
+.save__btn:invalid {
+  background: #e5e5e5;
+  border-radius: 2px;
+  cursor: default;
+}
+
+.save__btn_disabled {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 358px;
+  height: 50px;
+  border-radius: 2px;
+  margin-top: 48px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.3s ease, 0.3s ease;
+}
+
+.save__btn_add:valid {
+  width: 358px;
+  height: 50px;
+  background: #000000;
+  color: white;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 48px;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s ease, 0.3s ease;
+}
+
+.save__btn_add:invalid {
+  background: #e5e5e5;
+  border-radius: 2px;
+  cursor: default;
+}
+
+.save__btn_add_disabled {
+  border: 1px solid rgba(0, 0, 0, 1);
+  width: 358px;
+  height: 50px;
+  border-radius: 2px;
+  margin-top: 48px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  transition: 0.3s ease, 0.3s ease;
 }

@@ -21,9 +21,9 @@
 }
 
 .trash-icon {
-  position: absolute;
-  top: -288px;
-  right: 19px;
+  position: relative;
+  top: -265px;
+  right: -245px;
   width: 18px;
   height: 19px;
   background-image: url(/images/Trash.svg);

@@ -4,9 +4,9 @@
   border: none;
   background-image: url(/images/like.svg);
   background-color: transparent;
-  position: absolute;
-  right: 30px;
-  bottom: 0;
+  position: relative;
+  right: -245px;
+  bottom: 65px;
   cursor: pointer;
 }
 
