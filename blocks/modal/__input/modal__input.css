@@ -1,0 +1,86 @@
+input {
+  border: none;
+  outline: none;
+  width: 358px;
+  height: 14px;
+  padding-bottom: 13px;
+}
+
+input:invalid + .modal__line {
+  border: 1px solid rgba(255, 0, 0, 1);
+  height: 0px;
+  opacity: 0.7;
+}
+
+.input__text {
+  margin: 0;
+}
+
+.modal__line {
+  width: 358px;
+  height: 0px;
+  border: solid 1px black;
+  opacity: 0.2;
+  background-color: black;
+  display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  .modal__line {
+    width: 238px;
+  }
+  input {
+    width: 200px;
+  }
+}
+
+.form__input-error {
+  color: red;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input-error_des {
+  color: red;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input-error-name {
+  color: red;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.form__input-error-link {
+  color: red;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.error-message {
+  color: red;
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
