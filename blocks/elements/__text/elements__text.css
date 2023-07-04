@@ -11,6 +11,8 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 220px;
+  position: relative;
+  top: -21px;
 }
 
 .elements_discription {

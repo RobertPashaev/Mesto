@@ -28,22 +28,24 @@
                         name="user" 
                         minlength="2" 
                         maxlength="40" 
-                        class="form__input"  
+                        class="form__input userInput"  
                         placeholder="Имя" 
                         required
-                        class="userInput">
+                        pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus
+                        >
                         <img src="images/Line 2.jpg" 
                         alt="line" 
                         class="modal__line"
-                        pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus>
+                       >
                         <span 
-                        class="form__input-error" 
-                        id="input-user-error"></span>
+                        class="form__input-error error-message" 
+                        id="userIn-error"></span>
                        </div>
                         <div class="modal__field">
-                        <input pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus class="discriptionInput" id="discriptionIn" type="text" name="user__description" minlength="2" maxlength="200" class="form__input" required placeholder="Описание">
+                          <input pattern="^[A-Za-zА-Яа-яЁё\s -]+$" autofocus class="form__input discriptionInput " id="discriptionIn" type="text" name="user__description" minlength="2" maxlength="200" required placeholder="Описание">
+
                         <img src="images/Line 2.jpg" alt="line" class="modal__line">
-                        <span class="form__input-error_des" id="input-des-error"></span>
+                        <span class="form__input-error_des error-message" id="discriptionIn-error"></span>
                        </div>
                        </div>
                         <button  class="save__btn save__btn_disabled" type="submit" >Сохранить</button>
@@ -60,21 +62,21 @@
               <h2 class="modal__name">Новое место</h2>
               <div class="modal__field__container">
                 <div class="modal__field">
-                   <input class="input__text input__text_add" type="text" name="nameImg" placeholder="Название" minlength="2" maxlength="30" required>
+                   <input class="input__text input__text_add form__input" type="text" name="nameImg" placeholder="Название" minlength="2" maxlength="30" required>
                   <img src="images/Line 2.jpg" alt="line" class="modal__line">
                   <span 
-                        class="form__input-error-name" 
+                        class="form__input-error-name error-message" 
                         id="input-user-error-img"></span>
                 </div>
                 <div class="modal__field">
-                  <input class="input__text input__text_link" type="url" name="img_link" placeholder="Ссылка на картинку" required>
+                  <input class="input__text input__text_link popup__input_type_url form__input" type="url" name="img_link" placeholder="Ссылка на картинку" required>
                   <img src="images/Line 2.jpg" alt="line" class="modal__line">
                   <span 
-                  class="form__input-error-link" 
+                  class="form__input-error-link error-message" 
                   id="input-user-error-link"></span>
                 </div>
               </div>
-              <button class="save__btn_add save__btn_disabled" type="submit" required>Создать</button>
+              <button class="save__btn_add save__btn_disabled" type="submit" required id="saveImgBtn">Создать</button>
             </div>
           </div>
         </div>
@@ -115,7 +117,7 @@
       <h3 class="footer__text">© 2023 Pashaev Robert</h3>
       </section>
     </div>
-    <script defer src="index.js"></script>
-    <script defer src="validate.js"></script>
+    <script type="module" src="/scripts/index.js" defer></script>
+    <!-- <script src="/scripts/Card.js" type="module"></script> -->
   </body>
 </html>
