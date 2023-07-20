@@ -434,7 +434,10 @@ explicitly, e.g.
   border-radius: 50%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
+  .profile__image {
+    margin-top: 10px;
+  }
 }
 
 /*!**********************************************************************************!*\
@@ -481,7 +484,7 @@ explicitly, e.g.
 
 @media screen and (max-width: 420px) {
   #modal-container {
-    width: 400px;
+    width: 100%;
   }
   .profile__container {
     width: 100%;
@@ -634,7 +637,7 @@ explicitly, e.g.
   text-align: left;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .footer__text {
     width: 282px;
     height: 14px;
@@ -643,8 +646,8 @@ explicitly, e.g.
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
-    margin: 48px auto 36px;
+    text-align: center;
+    margin: 60px auto 36px;
   }
 }
 
