@@ -238,7 +238,7 @@ explicitly, e.g.
   flex-direction: column;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
     display: block;
     margin: 0;
@@ -294,7 +294,7 @@ explicitly, e.g.
   transition: opacity 0.5s;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .profile__btn {
     display: flex;
     margin: 0;
@@ -532,7 +532,7 @@ explicitly, e.g.
   opacity: 0.5;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .elements__grid {
     display: flex;
     margin: 100px auto;
@@ -600,7 +600,7 @@ explicitly, e.g.
   margin-top: 51px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .elements {
     display: flex;
     margin: 0 50px;
@@ -687,7 +687,7 @@ input[type='text']::placeholder {
   transition: opacity 0.3s;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .icon_close {
     width: 32px;
     height: 32px;
@@ -699,7 +699,7 @@ input[type='text']::placeholder {
 /*!*****************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/__btn/modal__btn.css ***!
   \*****************************************************************************************/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .save__btn {
     width: 240px;
     height: 25px;
@@ -1005,7 +1005,7 @@ input:invalid + .modal__line {
   gap: 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .modal {
     position: absolute;
     top: 97px;
