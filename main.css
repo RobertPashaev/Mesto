@@ -566,8 +566,8 @@ explicitly, e.g.
   width: 22px;
   height: 19px;
   border: none;
-  background-image: url(assets/images/like.svg);
   background-color: transparent;
+  background-image: url(assets/images/like.svg);
   position: relative;
   right: -245px;
   bottom: 65px;
