@@ -479,7 +479,7 @@ explicitly, e.g.
   }
 } */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   #modal-container {
     width: 400px;
   }
