@@ -219,8 +219,6 @@ explicitly, e.g.
   .header__logo {
     width: 100%;
     width: 104px;
-    margin-left: 27px;
-    margin-top: 28px;
   }
   .header__line {
     padding-top: 15px;
@@ -242,19 +240,11 @@ explicitly, e.g.
 
 @media (max-width: 400px) {
   .header {
-    max-width: 320px;
     display: block;
     margin: 0;
     width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    max-width: 720px;
-    display: flex;
-    margin: 30px 20px;
-    width: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
   }
 }
 
@@ -466,7 +456,7 @@ explicitly, e.g.
   padding-right: 30px;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -480,15 +470,24 @@ explicitly, e.g.
     max-width: 600px;
     margin-bottom: 100px;
   }
-}
-
-@media screen and (max-width: 600px) {
   .profile__avatar {
     padding: 0;
     width: 169px;
     height: 128px;
     display: flex;
     justify-content: center;
+  }
+} */
+
+@media screen and (max-width: 400px) {
+  #modal-container {
+    width: 400px;
+  }
+  .profile__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -531,6 +530,14 @@ explicitly, e.g.
 
 .trash-icon:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 400px) {
+  .elements__grid {
+    display: flex;
+    margin: 100px auto;
+    width: 100%;
+  }
 }
 
 /*!*************************************************************************************************!*\
@@ -596,14 +603,14 @@ explicitly, e.g.
 @media screen and (max-width: 400px) {
   .elements {
     display: flex;
-    margin: 0 20px;
+    margin: 0 50px;
     padding-top: 99px;
-    width: 398px;
+    width: 100%;
     height: 2268px;
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .elements {
     display: flex;
     margin: 0 20px;
@@ -611,7 +618,7 @@ explicitly, e.g.
     width: 600px;
     height: 100%;
   }
-}
+} */
 
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/footer/footer.css ***!
@@ -682,19 +689,77 @@ input[type='text']::placeholder {
 
 @media screen and (max-width: 400px) {
   .icon_close {
-    width: 20px;
-    height: 20px;
-    background-image: url(assets/images/CloseIcon.svg);
-    right: 0;
-    top: -30px;
+    width: 32px;
+    height: 32px;
+    right: -27ox;
+    top: -34px;
   }
 }
 
 /*!*****************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/__btn/modal__btn.css ***!
   \*****************************************************************************************/
+@media screen and (max-width: 400px) {
+  .save__btn {
+    width: 240px;
+    height: 25px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 150px;
+  }
+
+  .save__btn:invalid {
+    width: 240px;
+  }
+
+  .save__btn_add:valid {
+    width: 240px;
+    height: 50px;
+    background: #000000;
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 48px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s ease, 0.3s ease;
+  }
+
+  .save__btn_add:invalid {
+    background: #e5e5e5;
+    border-radius: 2px;
+    cursor: default;
+    width: 240px;
+    margin: 0;
+    height: 25px;
+  }
+
+  .save__btn_disabled {
+    width: 240px;
+  }
+  .save__btn_disabled:invalid {
+    width: 240px;
+  }
+
+  .save__btn:valid {
+    width: 240px;
+    margin: 0;
+    height: 25px;
+  }
+}
+
 .save__btn:valid {
-  width: 358px;
+  /* width: 358px; */
   height: 50px;
   background: #000000;
   color: white;
@@ -712,22 +777,11 @@ input[type='text']::placeholder {
   transition: 0.3s ease, 0.3s ease;
 }
 
-@media screen and (max-width: 400px) {
-  .save__btn {
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    width: 238px;
-  }
-}
-
 .save__btn:invalid {
   background: #e5e5e5;
   border-radius: 2px;
   cursor: default;
+  width: 350px;
 }
 
 .save__btn_disabled {
@@ -746,7 +800,7 @@ input[type='text']::placeholder {
 }
 
 .save__btn_add:valid {
-  width: 358px;
+  /* width: 358px; */
   height: 50px;
   background: #000000;
   color: white;
@@ -957,8 +1011,8 @@ input:invalid + .modal__line {
     top: 97px;
   }
   .modal__box {
-    width: 282px;
-    height: 322px;
+    width: 290px;
+    height: 290px;
   }
   .modal__field {
     width: 238px;
@@ -976,10 +1030,11 @@ input:invalid + .modal__line {
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-    padding-bottom: 75px;
+    padding-bottom: 60px;
+    padding-top: 15px;
   }
   .modal__container {
-    margin: 22px 25px;
+    margin: 0px 25px;
   }
 }
 
