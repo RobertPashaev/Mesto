@@ -672,6 +672,19 @@ input[type='text']::placeholder {
   text-align: left;
 }
 
+.likes {
+  width: 9px;
+  height: 13px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0 0;
+}
+
 /*!*******************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/__icon/modal__icon.css ***!
   \*******************************************************************************************/
@@ -1133,6 +1146,19 @@ input[type='text']::placeholder {
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.likes {
+  width: 9px;
+  height: 13px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0 0;
 }
 
 /*!*****************************************************************************************************************!*\
