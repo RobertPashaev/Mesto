@@ -432,6 +432,22 @@ explicitly, e.g.
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  z-index: 1;
+}
+
+.profile__avatar:hover .profile__image {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.profile__overlay-icon {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 226px;
+  left: 318px;
+  opacity: 0;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 420px) {
@@ -777,6 +793,10 @@ input[type='text']::placeholder {
   }
 }
 
+.save__btn:hover {
+  opacity: 0.7;
+}
+
 .save__btn:valid {
   width: 358px;
   height: 50px;
@@ -835,6 +855,10 @@ input[type='text']::placeholder {
   cursor: pointer;
   margin-bottom: 10px;
   transition: 0.3s ease, 0.3s ease;
+}
+
+.save__btn_add:hover {
+  opacity: 0.7;
 }
 
 .save__btn_add:invalid {
@@ -948,6 +972,123 @@ input:invalid + .modal__line {
   text-align: left;
 }
 
+/*!**********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/__delete/modal_delete.css ***!
+  \**********************************************************************************************/
+.modal_delete {
+  width: 430px;
+  height: 181px;
+  position: absolute;
+  visibility: hidden;
+  background-image: url(assets/images/Rectangle.jpg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+  margin: 115px 200px;
+  z-index: 99;
+}
+
+.accept {
+  width: 358px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  position: relative;
+  top: 15px;
+  right: 36px;
+  margin-left: 36px;
+  border-radius: 2px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.accept:hover {
+  opacity: 0.7;
+}
+
+.close-my-modal-btn-delete {
+  position: relative;
+  top: -120px;
+  left: 435px;
+  cursor: pointer;
+}
+
+.modal_delete_text {
+  margin-top: 34px;
+  margin-left: 36px;
+  text-align: left;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/__update/modal__update.css ***!
+  \***********************************************************************************************/
+/* .popup-container {
+  position: absolute;
+  left: 431px;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 0.4s, visiblity 0.4s;
+  width: 430px;
+  height: 272px;
+  border-radius: 10px;
+} */
+
+.modal_update {
+  background-image: url(assets/images/Rectangle.jpg) !important;
+  width: 430px;
+  height: 272px;
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: 2 !important;
+}
+
+.save__btn_update:valid {
+  margin: 0;
+  margin-top: 48px;
+}
+
+.update_text {
+  width: 360px;
+  height: 23px;
+  margin: 0;
+  margin-bottom: 54px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input-error-avatar {
+  margin-right: 230px;
+  padding-top: 5px;
+}
+
+.close-my-modal-btn-avatar {
+  position: absolute;
+  bottom: 275px;
+  right: -35px;
+  cursor: pointer;
+  background-image: none !important;
+}
+
 /*!******************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/blocks/modal/modal.css ***!
   \******************************************************************************/
@@ -963,9 +1104,9 @@ input:invalid + .modal__line {
   position: fixed;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 99;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   visibility: hidden;
@@ -1121,6 +1262,16 @@ input:invalid + .modal__line {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.overlay_avatar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .overlayEdit {
   position: fixed;
   top: 0;
@@ -1128,6 +1279,17 @@ input:invalid + .modal__line {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlayDelete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
 }
 
 .modal__caption {

@@ -52,6 +52,15 @@
                 </div>        
           </div>
         </div> 
+        <div class="modal-box">
+          <div class="overlayDelete"></div>
+          <div class="modal_delete" id="deleteModal">
+            <h2 class="modal_delete_text">Вы уверены?</h2>
+            <img alt="close" src="assets/images/CloseIcon.svg" class="close-my-modal-btn-delete">
+            <button class="accept">Да</button>
+        </div>
+        </div>
+       
       </form>
       <form name="addImg" class="form-cards">
         <div class="modal modal_add" id="my-modal_add">
@@ -85,19 +94,35 @@
       </form>
       <div id="modal-container" name="containerImg">
         <div class="modal_img" id="overlay"></div>
+        
         <div id="modal">
             <button id="close-my-modal-btn2" class="icon_close"></button>
           <img id="modal-image">
           <p class='modal__caption' name="image-caption" id="modal-caption"></p>
         </div>
       </div>
+      <div class="popup-container" name="avatarEdit">
+        
+        <form class=" modal-box modal modal_update">
+          <h2 class="update_text">Обновить аватар</h2>
+          <img alt="close" src="assets/images/CloseIcon.svg" class="icon_close close-my-modal-btn-avatar">
+          <input class="input__text input__text_link popup__input_type_url form__input" type="url" name="avarat_link" 
+          placeholder="Ссылка на картинку"  id='linAvatar' required>
+          <img src="assets/images/Line2.jpg" alt="line" class="update__line">
+          <span class="form__input-error-avatar error-message" id="input-user-error-avatar"></span>
+          <button  class="save__btn_update save__btn save__btn_disabled" type="submit" id="saveAvatarBtn">Сохранить</button>
+        </form>
+      </div>
+      
      <section class="profile">
         <div class="profile__container">
+          <img src="assets/images/Pen.png" class="profile__overlay-icon">
             <div class="profile__avatar">
                 <img 
                 alt="avatar"
                 src="assets/images/image.jpg"
                 class="profile__image">
+                
             </div>
             <div class="profile__info">
                 <div class="name">
