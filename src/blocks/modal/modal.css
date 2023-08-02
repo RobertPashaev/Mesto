@@ -2,6 +2,8 @@
 @import url(/src/blocks/modal/__icon/modal__icon.css);
 @import url(/src/blocks/modal/__btn/modal__btn.css);
 @import url(/src/blocks/modal/__input/modal__input.css);
+@import url(/src/blocks/modal/__delete/modal_delete.css);
+@import url(/src/blocks/modal/__update/modal__update.css);
 
 .form {
   display: flex;
@@ -15,9 +17,9 @@
   position: fixed;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 99;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   visibility: hidden;
@@ -76,14 +78,14 @@
   gap: 30px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .modal {
     position: absolute;
     top: 97px;
   }
   .modal__box {
-    width: 282px;
-    height: 322px;
+    width: 290px;
+    height: 290px;
   }
   .modal__field {
     width: 238px;
@@ -101,10 +103,11 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-    padding-bottom: 75px;
+    padding-bottom: 60px;
+    padding-top: 15px;
   }
   .modal__container {
-    margin: 22px 25px;
+    margin: 0px 25px;
   }
 }
 
@@ -172,6 +175,16 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.overlay_avatar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .overlayEdit {
   position: fixed;
   top: 0;
@@ -179,6 +192,17 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlayDelete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1;
 }
 
 .modal__caption {

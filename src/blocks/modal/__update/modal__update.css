@@ -1,0 +1,56 @@
+/* .popup-container {
+  position: absolute;
+  left: 431px;
+  right: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 0.4s, visiblity 0.4s;
+  width: 430px;
+  height: 272px;
+  border-radius: 10px;
+} */
+
+.modal_update {
+  background-image: url(/src/images/Rectangle.jpg) !important;
+  width: 430px;
+  height: 272px;
+  margin: 0 auto;
+  border-radius: 10px;
+  z-index: 2 !important;
+}
+
+.save__btn_update:valid {
+  margin: 0;
+  margin-top: 48px;
+}
+
+.update_text {
+  width: 360px;
+  height: 23px;
+  margin: 0;
+  margin-bottom: 54px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input-error-avatar {
+  margin-right: 230px;
+  padding-top: 5px;
+}
+
+.close-my-modal-btn-avatar {
+  position: absolute;
+  bottom: 275px;
+  right: -35px;
+  cursor: pointer;
+  background-image: none !important;
+}

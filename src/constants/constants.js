@@ -2,7 +2,7 @@ import { Popup } from '../components/Popup.js';
 import { Section } from '../components/Section.js';
 export const parentElement = document.querySelector('.elements__grid');
 export const cardList = document.querySelector('.grid-element');
-export const editPopup = new Popup('#my-modal');
+
 export const addPopup = new Popup('#my-modal_add');
 export const saveBtn = document.querySelector('.save__btn');
 export const closeModalBtn = document.getElementById('close-my-modal-btn');
@@ -16,6 +16,10 @@ export const closeBtn = document.getElementById('close-my-modal-btn2');
 export const nameInput = document.querySelector('input[name="nameImg"]');
 export const linkInput = document.querySelector('input[name="img_link"]');
 export const createButton = document.querySelector('.save__btn_add');
+export const editPopup = new Popup('[name="add"]');
+export const addImgPopup = new Popup('[name="addImg"]');
+export const imgContainer = new Popup('[name="containerImg"]');
+export const editAvarat = new Popup('[name="avatarEdit"]');
 
 export const initialCards = [
   {

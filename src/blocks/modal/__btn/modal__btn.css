@@ -1,3 +1,66 @@
+@media screen and (max-width: 420px) {
+  .save__btn {
+    width: 240px;
+    height: 25px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 150px;
+  }
+
+  .save__btn:invalid {
+    width: 240px;
+  }
+
+  .save__btn_add:valid {
+    width: 240px;
+    height: 50px;
+    background: #000000;
+    color: white;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 48px;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s ease, 0.3s ease;
+  }
+
+  .save__btn_add:invalid {
+    background: #e5e5e5;
+    border-radius: 2px;
+    cursor: default;
+    width: 240px;
+    margin: 0;
+    height: 25px;
+  }
+
+  .save__btn_disabled {
+    width: 240px;
+  }
+  .save__btn_disabled:invalid {
+    width: 240px;
+  }
+
+  .save__btn:valid {
+    width: 240px;
+    margin: 0;
+    height: 25px;
+  }
+}
+
+.save__btn:hover {
+  opacity: 0.7;
+}
+
 .save__btn:valid {
   width: 358px;
   height: 50px;
@@ -17,22 +80,11 @@
   transition: 0.3s ease, 0.3s ease;
 }
 
-@media screen and (max-width: 400px) {
-  .save__btn {
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    width: 238px;
-  }
-}
-
 .save__btn:invalid {
   background: #e5e5e5;
   border-radius: 2px;
   cursor: default;
+  width: 350px;
 }
 
 .save__btn_disabled {
@@ -67,6 +119,10 @@
   cursor: pointer;
   margin-bottom: 10px;
   transition: 0.3s ease, 0.3s ease;
+}
+
+.save__btn_add:hover {
+  opacity: 0.7;
 }
 
 .save__btn_add:invalid {

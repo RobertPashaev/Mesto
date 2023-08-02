@@ -29,6 +29,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "core-js": "^3.31.1"
+    "core-js": "^3.31.1",
+    "install": "^0.13.0",
+    "npm": "^9.8.1"
   }
 }

@@ -24,11 +24,9 @@ export class UserInfo {
     };
   }
 
-  setUserInfo(obj) {
-    this._userName.textContent = obj.name;
-    this._userTitle.textContent = obj.title;
-    const element = document.querySelector('.modal');
-    element.classList.remove('open');
+  setUserInfo(name, about) {
+    this._userName.textContent = name;
+    this._userTitle.textContent = about;
   }
 
   _handleOpenPopup() {
@@ -50,11 +48,9 @@ export class UserInfo {
       '[name="user__description"]'
     );
 
-    const userInfoData = {
-      name: nameInput.value,
-      title: titleInput.value,
-    };
+    const userName = nameInput.value;
+    const userTitle = titleInput.value;
 
-    this.setUserInfo(userInfoData);
+    this.setUserInfo(userName, userTitle);
   }
 }

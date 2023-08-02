@@ -16,12 +16,11 @@
   transition: opacity 0.3s;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .icon_close {
-    width: 20px;
-    height: 20px;
-    background-image: url(/src/images/CloseIcon.svg);
-    right: 0;
-    top: -30px;
+    width: 32px;
+    height: 32px;
+    right: -27ox;
+    top: -34px;
   }
 }

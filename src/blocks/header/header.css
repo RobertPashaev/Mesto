@@ -8,20 +8,12 @@
   flex-direction: column;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
-    max-width: 320px;
     display: block;
     margin: 0;
     width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    max-width: 720px;
-    display: flex;
-    margin: 30px 20px;
-    width: 100%;
+    margin-left: 25px;
+    margin-top: 10px;
   }
 }

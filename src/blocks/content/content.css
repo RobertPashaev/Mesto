@@ -2,3 +2,11 @@
   max-width: 880px;
   width: 100%;
 }
+
+@media screen and (max-width: 420px) {
+  .page__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -43,16 +43,19 @@ export class FormValidator {
     this._setEventListeners();
 
     this._form.addEventListener('submit', (evt) => {
-      evt.preventDefault();
+      evt.preventDefault(evt);
     });
   }
 }
 
 const formElementEdit = document.querySelector('form[name="add"]');
 const formElement = document.querySelector('form[name="addImg"]');
+const formElementAvatar = document.querySelector('[name=avatarEdit]');
 
+const validatorAvatar = new FormValidator(formElementAvatar);
 const validatorEdit = new FormValidator(formElementEdit);
 const validatorAdd = new FormValidator(formElement);
 
+validatorAvatar.enableValidation();
 validatorAdd.enableValidation();
 validatorEdit.enableValidation();

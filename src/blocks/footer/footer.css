@@ -9,7 +9,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .footer__text {
     width: 282px;
     height: 14px;
@@ -18,8 +18,11 @@
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0em;
-    text-align: left;
-    margin: 48px auto 36px;
+    text-align: center;
+    margin: 110px auto 36px;
+  }
+  .footer {
+    margin-top: 20px;
   }
 }
 

@@ -6,3 +6,16 @@ input[type='text']::placeholder {
   letter-spacing: 0em;
   text-align: left;
 }
+
+.likes {
+  width: 9px;
+  height: 13px;
+  font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
+  margin: 20px 0 0;
+}

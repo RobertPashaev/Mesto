@@ -5,7 +5,7 @@
 @import url(/src/blocks/footer/footer.css);
 @import url(/src/blocks/modal/modal.css);
 @import url(/src/blocks/modal/__add/modal_add.css);
-
+@import url(/src/blocks/loader/loader.css);
 .page {
   background-color: black;
 }

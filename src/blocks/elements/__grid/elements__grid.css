@@ -35,3 +35,11 @@
 .trash-icon:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 420px) {
+  .elements__grid {
+    display: flex;
+    margin: 100px auto;
+    width: 100%;
+  }
+}

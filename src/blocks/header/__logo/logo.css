@@ -8,12 +8,10 @@
   padding-top: 41px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
   .header__logo {
     width: 100%;
     width: 104px;
-    margin-left: 27px;
-    margin-top: 28px;
   }
   .header__line {
     padding-top: 15px;
