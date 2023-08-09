@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/RobertPashaev/Mesto/static/css/main.99a57b33.css",
+    "main.js": "/RobertPashaev/Mesto/static/js/main.28a8f53a.js",
+    "static/js/787.ab201b9c.chunk.js": "/RobertPashaev/Mesto/static/js/787.ab201b9c.chunk.js",
+    "static/media/kustojpg.jpg": "/RobertPashaev/Mesto/static/media/kustojpg.76fca75e67e2c9a6b0a1.jpg",
+    "static/media/header__logo.svg": "/RobertPashaev/Mesto/static/media/header__logo.a307e1c403338846f8a4c732cb32bf12.svg",
+    "static/media/like_button.svg": "/RobertPashaev/Mesto/static/media/like_button.49570bcb1d637fdb38e5.svg",
+    "index.html": "/RobertPashaev/Mesto/index.html",
+    "static/media/Trash.svg": "/RobertPashaev/Mesto/static/media/Trash.823b0cf1b0b7e9cb7cad.svg",
+    "static/media/like_active.svg": "/RobertPashaev/Mesto/static/media/like_active.75438e944a43e4c0b404.svg",
+    "static/media/edit-button.svg": "/RobertPashaev/Mesto/static/media/edit-button.8667ac4a523e8fc42e59.svg",
+    "static/media/avatar-pencil.svg": "/RobertPashaev/Mesto/static/media/avatar-pencil.a086f758840ae814ecdece4799d2cf40.svg",
+    "static/media/CloseIcon.svg": "/RobertPashaev/Mesto/static/media/CloseIcon.2ceb783afbab75916ddc.svg",
+    "static/media/add-button.svg": "/RobertPashaev/Mesto/static/media/add-button.d86bb2edc2f6eadb96b7.svg",
+    "main.99a57b33.css.map": "/RobertPashaev/Mesto/static/css/main.99a57b33.css.map",
+    "main.28a8f53a.js.map": "/RobertPashaev/Mesto/static/js/main.28a8f53a.js.map",
+    "787.ab201b9c.chunk.js.map": "/RobertPashaev/Mesto/static/js/787.ab201b9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99a57b33.css",
+    "static/js/main.28a8f53a.js"
+  ]
+}
